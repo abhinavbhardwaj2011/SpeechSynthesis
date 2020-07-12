@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<style>
+	body{
+		margin: 0;
+		padding: 0;
+		background-image: url("jarvis.jpg");
+		background size: cover;
+		
+	}	
+	.register{
+		text-align: center;
+		background: rgba(0,0,0,0.5);
+		 width: 35%;
+		 height:auto;
+		position: absolute;
+		color: #fff;
+		margin-left: 30%;
+		top: 10%;
+		font-size:18px; 
+		transition: 0.8s;
+	}
+
+	.register:focas{
+			border-top-right-radius: 100px;
+		border-bottom-left-radius: 100px;
+	}
+
+	.register input[type="text"],input[type="password"],input[type="email"]{
+
+		text-align: center;
+		color: #fff;
+		margin-top: 6%;
+		border:none;
+		background: transparent;
+		border-bottom: 2px solid #fff;
+		font-size: 18px;
+		transition: 0.5s;
+	}
+	.register input[type="text"]:focus,input[type="password"]:focus,input[type="email"]:focus{
+		
+		border-left:50px solid white;
+		border-right:50px solid white;
+		transition: 0.5s;
+		font-size: 120%;
+	}
+	.register p{
+		margin-left: 45%; 
+		border: solid white 2px;
+		width: 50px;
+
+	}
+
+
+	.register input[type="submit"]{
+		font-size: 20px;
+		font-family: bold;
+		
+	</style>
+</head>
+<body>
+	<form>
+		<div class="register">
+			<h1>Speech Samples</h1>
+			
+			<audio controls>
+			  <source src="speech_sample/competence1.ogg" type="audio/ogg">
+			  <source src="speech_sample/competence1.mp3" type="audio/mpeg">
+				Your browser does not support the audio element.
+			</audio>
+			<audio controls>
+			  <source src="speech_sample/competence2.ogg" type="audio/ogg">
+			  <source src="speech_sample/competence2.ogg" type="audio/mpeg">
+				Your browser does not support the audio element.
+			</audio>
+			<audio controls>
+			  <source src="speech_sample/competence3.ogg" type="audio/ogg">
+			  <source src="speech_sample/competence3.ogg" type="audio/mpeg">
+				Your browser does not support the audio element.
+			</audio>
+			<audio controls>
+			  <source src="speech_sample/competence4.ogg" type="audio/ogg">
+			  <source src="speech_sample/competence4.ogg" type="audio/mpeg">
+				Your browser does not support the audio element.
+			</audio>
+			<audio controls>
+			  <source src="speech_sample/competence5.ogg" type="audio/ogg">
+			  <source src="speech_sample/competence5.ogg" type="audio/mpeg">
+				Your browser does not support the audio element.
+			</audio>
+	   
+	    </div>
+	  </div>
+	</form> 
+
+
+</body>
+</html>

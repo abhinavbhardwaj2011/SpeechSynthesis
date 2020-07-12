@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<!DOCTYPE html>
+<html>
+<head>
+<link rel="stylesheet" href="main.css">
+
+<script type="text/javascript">
+$(function () {
+
+  $('.btn-cta').click(function () {
+    $('.overlay').addClass('is-open');
+    return false;
+  });
+
+  $('.close-btn').click(function () {
+    $('.overlay').removeClass('is-open');
+  });
+
+});
+</script>
+
+</head>
+<body>
+
+<svg xmlns="http://www.w3.org/2000/svg" height="100%" width="100%" style=" position:fixed; top:0; left:0;" viewBox="0 0 900 500" preserveAspectRatio="xMidYMid meet">
+
+ <image x="5" y="10" width="100%" height="100%"
+     xlink:href="jarvis1.jpg" />
+
+
+<polygon class="trap1"  width="100%" height="100%" 
+points="10,400  10,10  450,150 450,250" />
+
+<text x="70" y="200"
+      style="fill: #000000; stroke: #ffffff;  font-size: 24px;">
+    Tacotron
+</text>
+
+<polygon class="trap2" width="100%" height="100%" 
+points="900,10  900,400  450,250 450,150" />
+         
+<text x="600" y="200"
+      style="fill: #000000; stroke: #ffffff;  font-size: 24px;">
+    Waveglow
+</text>
+		 
+<polygon class="triup" width="100%" height="100%" 
+points="10,10  900,10  450,150" />
+
+<text x="400" y="70"
+      style="fill: #000000; stroke: #ffffff;  font-size: 24px;">
+    Wavenet
+</text>
+
+<polygon class="tridown" id="tridown" width="100%" height="100%" 
+points="10,400  900,400  450,250" />
+<a href="speechsamples.html">
+<text x="400" y="350"
+      style="fill: #000000; stroke: #ffffff;  font-size: 24px;">
+    Speech Samples
+</text></a>
+
+<!--<text x="400" y="470"
+      style="fill: #000000; stroke: #ffffff;  font-size: 24px;">
+    TABS
+</text>
+
+<g><a xlink:href="#" class="btn-cta" >
+<polygon data-toggle="modal" class="rect" width="100%" height="100%" 
+points="10,400  10,500  900,500 900,400" style="fill: red;" />
+</a>
+</g>-->
+
+</svg>
+
+<div  class="overlay">
+  <div class="modal" style="width="200px"; height="300px";>
+
+    <!-- Modal content-->
+    <div class="modal-content">
+        <div class="modal-header">
+          <button class="close-btn">x</button>
+          <h4 class="modal-title">Modal Header</h4>
+        </div>
+        <div class="modal-body">
+          <p>Some text in the modal.</p>
+        </div>
+        
+    </div>
+
+  </div>
+</div>
+
+
+
+</body>
+</html>
+

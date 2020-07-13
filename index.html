@@ -1,99 +1,55 @@
-<!DOCTYPE html>
-<!DOCTYPE html>
 <html>
-<head>
-<link rel="stylesheet" href="main.css">
+  <head>
+  </head>
+     <title> Social Speaker Characteristics </title>
+  <body>
+     <h1 align="center"> Towards speaker characterisation using Neural TTS(Text to Speech) voices </h1>
+     <h2 align="center"> Abhinav Bhardwaj and Sai Sirisha Rallabandi </h2>
+     <h3 align="center"> Quality and Usability Lab </h3>
+     <h3 align="center"> Technical University Berlin </h3>
 
-<script type="text/javascript">
-$(function () {
+   <h4 align="center"> Abstract: </h4>
+  <font size="4"> With the advent of computing abilities, the Text-to-Speech (TTS) community has achieved
+high quality speech synthesis in the recent past. However, the existing speech synthesisers
+still lack the human-ness in many ways. This refers to the additional information such as age,
+gender, emotional state of the person, to name a few. All this information is collectively called
+the extra-linguistic or the paralinguistic information. Now that we have achieved very good
+speech synthesis, the research community is focussed on delivering this paralinguistic
+information along with the speech through the synthesisers. Nevertheless, there is still a
+significant research gap in terms of evaluating the synthesisers that are developed for
+different application domains.
+Through our work, we investigate the perceptual dimensions contributing to the social
+speaker characteristics warmth and competence in the generated speech. We perform this
+study on various Neural end-to-end TTS systems. Therefore, through this project, we will
+explore domain-specific perceptual acceptance of state-of-the art TTS systems. For its study,
+we would focus on the application domains, health care and customer service.</font></h4>
+    
+    <br>
+    <br>    
+  
+  <p align="center"><font size="4"> Speech Samples used for subjective evaluations are presented below.</font></p>
 
-  $('.btn-cta').click(function () {
-    $('.overlay').addClass('is-open');
-    return false;
-  });
-
-  $('.close-btn').click(function () {
-    $('.overlay').removeClass('is-open');
-  });
-
-});
-</script>
-
-</head>
-<body>
-
-<svg xmlns="http://www.w3.org/2000/svg" height="100%" width="100%" style=" position:fixed; top:0; left:0;" viewBox="0 0 900 500" preserveAspectRatio="xMidYMid meet">
-
- <image x="5" y="10" width="100%" height="100%"
-     xlink:href="jarvis1.jpg" />
-
-
-<polygon class="trap1"  width="100%" height="100%" 
-points="10,400  10,10  450,150 450,250" />
-<a href="warmth.html">
-<text x="70" y="200"
-      style="fill: #000000; stroke: #ffffff;  font-size: 24px;">
-    Warmth
-</text></a>
-
-<polygon class="trap2" width="100%" height="100%" 
-points="900,10  900,400  450,250 450,150" />
-         
-<a href="competence.html">		 
-<text x="600" y="200"
-      style="fill: #000000; stroke: #ffffff;  font-size: 24px;">
-    Competence
-</text></a>
-		 
-<polygon class="triup" width="100%" height="100%" 
-points="10,10  900,10  450,150" />
-
-<text x="400" y="70"
-      style="fill: #000000; stroke: #ffffff;  font-size: 24px;">
-    Tacotron 2
-</text>
-
-<polygon class="tridown" id="tridown" width="100%" height="100%" 
-points="10,400  900,400  450,250" />
-<a href="simplespeech.html">
-<text x="400" y="350"
-      style="fill: #000000; stroke: #ffffff;  font-size: 24px;">
-    Simple Speech
-</text></a>
-
-<!--<text x="400" y="470"
-      style="fill: #000000; stroke: #ffffff;  font-size: 24px;">
-    TABS
-</text>
-
-<g><a xlink:href="#" class="btn-cta" >
-<polygon data-toggle="modal" class="rect" width="100%" height="100%" 
-points="10,400  10,500  900,500 900,400" style="fill: red;" />
-</a>
-</g>-->
-
-</svg>
-
-<div  class="overlay">
-  <div class="modal" style="width="200px"; height="300px";>
-
-    <!-- Modal content-->
-    <div class="modal-content">
-        <div class="modal-header">
-          <button class="close-btn">x</button>
-          <h4 class="modal-title"></h4>
-        </div>
-        <div class="modal-body">
-          
-        </div>
-        
-    </div>
-
-  </div>
-</div>
-
-
-
-</body>
+    
+    <br>
+     <table align="center" , border="1">
+        <tr>
+          <td><center><font size ="6">TTS System</font></center></td><td><center><font size ="6">Competence</font></center></td><td><center><font size="6">Warmth</font></center></td>
+        </tr>
+        <tr>
+          <td><center><font size ="6">Tacotron2</font></center></td><td><audio controls><source src="speech_sample/competence1.wav"></audio></td> <td><audio controls><source src="speech_sample/warmth1.wav"></audio></td>
+		</tr>
+        <tr>
+          <td></td><td><audio controls><source src="speech_sample/competence2.wav"></audio></td> <td><audio controls><source src="speech_sample/warmth2.wav"></audio></td>
+		</tr>  
+        <tr>
+          <td></td><td><audio controls><source src="speech_sample/competence3.wav"></audio></td> <td><audio controls><source src="speech_sample/warmth3.wav"></audio></td>
+		</tr>
+        <tr>
+          <td></td><td><audio controls><source src="speech_sample/competence4.wav"></audio></td> <td><audio controls><source src="speech_sample/warmth4.wav"></audio></td>   
+		</tr>
+		<tr>
+          <td></td><td><audio controls><source src="speech_sample/competence5.wav"></audio></td> <td><audio controls><source src="speech_sample/warmth5.wav"></audio></td>   
+		</tr>
+     </table>
+  </body>
 </html>
-

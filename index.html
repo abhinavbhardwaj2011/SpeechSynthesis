@@ -1,5 +1,16 @@
 <html>
   <head>
+	  <meta name="viewport" content="width=device-width, initial-scale=1">
+	  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+	  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+	  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+	  
+	  <style>
+	  .a{background-color:#aaa;}
+	  .b{background-color:#bbb;}
+	  </style>
+	  
+	  
   </head>
      <title> Social Speaker Characteristics </title>
   <body>
@@ -31,25 +42,260 @@ we would focus on the application domains, health care and customer service.</fo
 
     
     <br>
-     <table align="center" , border="1">
-        <tr>
-          <td><center><font size ="6">TTS System</font></center></td><td><center><font size ="6">Competence</font></center></td><td><center><font size="6">Warmth</font></center></td>
-        </tr>
-        <tr>
-          <td><center><font size ="6">Tacotron2</font></center></td><td><audio controls><source src="speech_sample/competence1.wav"></audio></td> <td><audio controls><source src="speech_sample/warmth1.wav"></audio></td>
-		</tr>
-        <tr>
-          <td></td><td><audio controls><source src="speech_sample/competence2.wav"></audio></td> <td><audio controls><source src="speech_sample/warmth2.wav"></audio></td>
-		</tr>  
-        <tr>
-          <td></td><td><audio controls><source src="speech_sample/competence3.wav"></audio></td> <td><audio controls><source src="speech_sample/warmth3.wav"></audio></td>
-		</tr>
-        <tr>
-          <td></td><td><audio controls><source src="speech_sample/competence4.wav"></audio></td> <td><audio controls><source src="speech_sample/warmth4.wav"></audio></td>   
-		</tr>
-		<tr>
-          <td></td><td><audio controls><source src="speech_sample/competence5.wav"></audio></td> <td><audio controls><source src="speech_sample/warmth5.wav"></audio></td>   
-		</tr>
-     </table>
+	
+	
+
+	<div class="row">
+	  <div class="col-sm-12 a" style="background-color:#aaa;">
+		<center><h2>Text to Speech System</h2></center>
+	  </div>
+	</div>
+	
+	<div class="row">
+	  <div class="col-sm-6 b">
+		<center><h3>Tacotron2 & Wavenet</h3></center>
+	  </div>
+	  <div class="col-sm-6 a">
+		<center><h3>Tacotron2 & Waveglow</h3></center>
+	  </div>
+	</div>
+	
+	<div class="row">
+	  <div class="col-sm-3 a">
+		<center><h3>Competence</h3></center>
+	  </div>
+	  <div class="col-sm-3 b">
+		<center><h3>Warmth</h3></center>
+	  </div>
+	  <div class="col-sm-3 a">
+		<center><h3>Competence</h3></center>
+	  </div>
+	  <div class="col-sm-3 b">
+		<center><h3>Warmth</h3></center>
+	  </div>
+	</div>
+	
+	<div class="row">
+	  <div class="col-sm-3 a">
+		<p>1. I am sure we can reach a solution.</p>
+		<audio controls><source src="speech_sample/t2&wn/competence1.wav"></audio>
+	  </div>
+	  <div class="col-sm-3 b">
+		<p>1. Is there anything I can do to help?</p>
+		<audio controls><source src="speech_sample/t2&wn/warmth1.wav"></audio>
+	  </div>
+	  <div class="col-sm-3 a">
+		<p>1. I am sure we can reach a solution.</p>
+		<audio controls><source src="speech_sample/t2&wg/C1.wav"></audio>
+	  </div>
+	  <div class="col-sm-3 b">
+		<p>1. Is there anything I can do to help?</p>
+		<audio controls><source src="speech_sample/t2&wg/W1.wav"></audio>
+	  </div>
+	</div>
+	
+	<div class="row">
+	  <div class="col-sm-3 a">
+		<p>2. I can remedy the situation.</p>
+		<audio controls><source src="speech_sample/t2&wn/competence2.wav"></audio>
+	  </div>
+	  <div class="col-sm-3 b">
+		<p>2. Have you told your doctor how you are feeling?</p>
+		<audio controls><source src="speech_sample/t2&wn/warmth2.wav"></audio>
+	  </div>
+	  <div class="col-sm-3 a">
+		<p>2. I can remedy the situation.</p>
+		<audio controls><source src="speech_sample/t2&wg/C2.wav"></audio>
+	  </div>
+	  <div class="col-sm-3 b">
+		<p>2. Have you told your doctor how you are feeling?</p>
+		<audio controls><source src="speech_sample/t2&wg/W2.wav"></audio>
+	  </div>
+	</div>
+	
+	<div class="row">
+	  <div class="col-sm-3 a">
+		<p>3. I understand that you feel upset.</p>
+		<audio controls><source src="speech_sample/t2&wn/competence3.wav"></audio>
+	  </div>
+	  <div class="col-sm-3 b">
+		<p>3. Do you need someone to talk with?</p>
+		<audio controls><source src="speech_sample/t2&wn/warmth3.wav"></audio>
+	  </div>
+	  <div class="col-sm-3 a">
+		<p>3. I understand that you feel upset.</p>
+		<audio controls><source src="speech_sample/t2&wg/C3.wav"></audio>
+	  </div>
+	  <div class="col-sm-3 b">
+		<p>3. Do you need someone to talk with?</p>
+		<audio controls><source src="speech_sample/t2&wg/W3.wav"></audio>
+	  </div>
+	</div>
+	
+	<div class="row">
+	  <div class="col-sm-3 a">
+		<p>4. Feel free to call us anytime if you have any questions.</p>
+		<audio controls><source src="speech_sample/t2&wn/competence4.wav"></audio>
+	  </div>
+	  <div class="col-sm-3 b">
+		<p>4. There is hope.</p>
+		<audio controls><source src="speech_sample/t2&wn/warmth4.wav"></audio>
+	  </div>
+	  <div class="col-sm-3 a">
+		<p>4. Feel free to call us anytime if you have any questions.</p>
+		<audio controls><source src="speech_sample/t2&wg/C4.wav"></audio>
+	  </div>
+	  <div class="col-sm-3 b">
+		<p>4. There is hope.</p>
+		<audio controls><source src="speech_sample/t2&wg/W4.wav"></audio>
+	  </div>
+	</div>
+	
+	<div class="row">
+	  <div class="col-sm-3 a">
+		<p>5. If you need any further assistance, I would be happy to help.</p>
+		<audio controls><source src="speech_sample/t2&wn/competence5.wav"></audio>
+	  </div>
+	  <div class="col-sm-3 b">
+		<p>5. It is ok to feel this way.</p>
+		<audio controls><source src="speech_sample/t2&wn/warmth5.wav"></audio>
+	  </div>
+	  <div class="col-sm-3 a">
+		<p>5. If you need any further assistance, I would be happy to help.</p>
+		<audio controls><source src="speech_sample/t2&wg/C5.wav"></audio>
+	  </div>
+	  <div class="col-sm-3 b">
+		<p>5. It is ok to feel this way.</p>
+		<audio controls><source src="speech_sample/t2&wg/W5.wav"></audio>
+	  </div>
+	</div>
+	
+	<br>
+	
+	<div class="row">
+	  <div class="col-sm-6 b">
+		<center><h3>GST</h3></center>
+	  </div>
+	  <div class="col-sm-6 a">
+		<center><h3>HTS</h3></center>
+	  </div>
+	</div>
+	
+	<div class="row">
+	  <div class="col-sm-3 a">
+		<center><h3>Competence</h3></center>
+	  </div>
+	  <div class="col-sm-3 b">
+		<center><h3>Warmth</h3></center>
+	  </div>
+	  <div class="col-sm-3 a">
+		<center><h3>Competence</h3></center>
+	  </div>
+	  <div class="col-sm-3 b">
+		<center><h3>Warmth</h3></center>
+	  </div>
+	</div>
+	
+	<div class="row">
+	  <div class="col-sm-3 a">
+		<p>1. I am sure we can reach a solution.</p>
+		<audio controls><source src="speech_sample/gst/c1.wav"></audio>
+	  </div>
+	  <div class="col-sm-3 b">
+		<p>1. Is there anything I can do to help?</p>
+		<audio controls><source src="speech_sample/gst/w1.wav"></audio>
+	  </div>
+	  <div class="col-sm-3 a">
+		<p>1. I am sure we can reach a solution.</p>
+		<audio controls><source src="speech_sample/gst/c1.wav"></audio>
+	  </div>
+	  <div class="col-sm-3 b">
+		<p>1. Is there anything I can do to help?</p>
+		<audio controls><source src="speech_sample//w1.wav"></audio>
+	  </div>
+	</div>
+	
+	<div class="row">
+	  <div class="col-sm-3 a">
+		<p>2. I can remedy the situation.</p>
+		<audio controls><source src="speech_sample/gst/c2.wav"></audio>
+	  </div>
+	  <div class="col-sm-3 b">
+		<p>2. Have you told your doctor how you are feeling?</p>
+		<audio controls><source src="speech_sample/gst/w2.wav"></audio>
+	  </div>
+	  <div class="col-sm-3 a">
+		<p>2. I can remedy the situation.</p>
+		<audio controls><source src="speech_sample/gst/c2.wav"></audio>
+	  </div>
+	  <div class="col-sm-3 b">
+		<p>2. Have you told your doctor how you are feeling?</p>
+		<audio controls><source src="speech_sample//w2.wav"></audio>
+	  </div>
+	</div>
+	
+	<div class="row">
+	  <div class="col-sm-3 a">
+		<p>3. I understand that you feel upset.</p>
+		<audio controls><source src="speech_sample/gst/c3.wav"></audio>
+	  </div>
+	  <div class="col-sm-3 b">
+		<p>3. Do you need someone to talk with?</p>
+		<audio controls><source src="speech_sample/gst/w3.wav"></audio>
+	  </div>
+	  <div class="col-sm-3 a">
+		<p>3. I understand that you feel upset.</p>
+		<audio controls><source src="speech_sample/gst/c3.wav"></audio>
+	  </div>
+	  <div class="col-sm-3 b">
+		<p>3. Do you need someone to talk with?</p>
+		<audio controls><source src="speech_sample//w3.wav"></audio>
+	  </div>
+	</div>
+	
+	<div class="row">
+	  <div class="col-sm-3 a">
+		<p>4. Feel free to call us anytime if you have any questions.</p>
+		<audio controls><source src="speech_sample/gst/c4.wav"></audio>
+	  </div>
+	  <div class="col-sm-3 b">
+		<p>4. There is hope.</p>
+		<audio controls><source src="speech_sample/gst/w4.wav"></audio>
+	  </div>
+	  <div class="col-sm-3 a">
+		<p>4. Feel free to call us anytime if you have any questions.</p>
+		<audio controls><source src="speech_sample/gst/c4.wav"></audio>
+	  </div>
+	  <div class="col-sm-3 b">
+		<p>4. There is hope.</p>
+		<audio controls><source src="speech_sample//w4.wav"></audio>
+	  </div>
+	</div>
+	
+	<div class="row">
+	  <div class="col-sm-3 a">
+		<p>5. If you need any further assistance, I would be happy to help.</p>
+		<audio controls><source src="speech_sample/gst/c5.wav"></audio>
+	  </div>
+	  <div class="col-sm-3 b">
+		<p>5. It is ok to feel this way.</p>
+		<audio controls><source src="speech_sample/gst/w5.wav"></audio>
+	  </div>
+	  <div class="col-sm-3 a">
+		<p>5. If you need any further assistance, I would be happy to help.</p>
+		<audio controls><source src="speech_sample/gst/c5.wav"></audio>
+	  </div>
+	  <div class="col-sm-3 b">
+		<p>5. It is ok to feel this way.</p>
+		<audio controls><source src="speech_sample//w5.wav"></audio>
+	  </div>
+	</div>
+	
+	
+	
+	
+	
+	
+	
   </body>
 </html>

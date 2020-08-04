@@ -8,293 +8,429 @@
 	  <style>
 	  .a{background-color:#aaa;}
 	  .b{background-color:#bbb;}
+	  .c{background-color:burlywood;}
+	  .d{background-color:moccasin;}
+	  p{text:14px;}
 	  </style>
 	  
 	  
   </head>
      <title> Social Speaker Characteristics </title>
   <body>
-     <h1 align="center"> Towards speaker characterisation using Neural TTS(Text to Speech) voices </h1>
+    <!-- <h1 align="center"> Towards speaker characterisation using Neural TTS(Text to Speech) voices </h1>
      <h2 align="center"> Abhinav Bhardwaj and Sai Sirisha Rallabandi </h2>
      <h3 align="center"> Quality and Usability Lab </h3>
      <h3 align="center"> Technical University Berlin </h3>
-
-   <h4 align="center"> Abstract: </h4>
-  <font size="4"> With the advent of computing abilities, the Text-to-Speech (TTS) community has achieved
-high quality speech synthesis in the recent past. However, the existing speech synthesisers
-still lack the human-ness in many ways. This refers to the additional information such as age,
-gender, emotional state of the person, to name a few. All this information is collectively called
-the extra-linguistic or the paralinguistic information. Now that we have achieved very good
-speech synthesis, the research community is focussed on delivering this paralinguistic
-information along with the speech through the synthesisers. Nevertheless, there is still a
-significant research gap in terms of evaluating the synthesisers that are developed for
-different application domains.
-Through our work, we investigate the perceptual dimensions contributing to the social
-speaker characteristics warmth and competence in the generated speech. We perform this
-study on various Neural end-to-end TTS systems. Therefore, through this project, we will
-explore domain-specific perceptual acceptance of state-of-the art TTS systems. For its study,
-we would focus on the application domains, health care and customer service.</font></h4>
-    
-    <br>
-    <br>    
-  
-  <p align="center"><font size="4"> Speech Samples used for subjective evaluations are presented below.</font></p>
-
-    
+    -->
+	
+	<br>
     <br>
 	
-	
-
 	<div class="row">
 	  <div class="col-sm-12 a" style="background-color:#aaa;">
 		<center><h2>Text to Speech System</h2></center>
 	  </div>
 	</div>
+	<div class="row">
+	  <div class="col-sm-12 a" style="background-color:#aaa;">
+		<center><h3>For Competence</h3></center>
+	  </div>
+	</div>
 	
 	<div class="row">
-	  <div class="col-sm-6 b">
+	  <div class="col-sm-4 a">
+		<center><h3>Text</h3></center>
+	  </div>
+	  <div class="col-sm-2 b">
 		<center><h3>Tacotron2</h3></center>
 	  </div>
-	  <div class="col-sm-6 a">
+	  <div class="col-sm-2 c">
 		<center><h3>Waveglow</h3></center>
 	  </div>
-	</div>
-	
-	<div class="row">
-	  <div class="col-sm-3 a">
-		<center><h3>Competence</h3></center>
-	  </div>
-	  <div class="col-sm-3 b">
-		<center><h3>Warmth</h3></center>
-	  </div>
-	  <div class="col-sm-3 a">
-		<center><h3>Competence</h3></center>
-	  </div>
-	  <div class="col-sm-3 b">
-		<center><h3>Warmth</h3></center>
+	  <div class="col-sm-4 d">
+		<center><h3>Tacotron2 GST</h3></center>
 	  </div>
 	</div>
 	
 	<div class="row">
-	  <div class="col-sm-3 a">
-		<p>1. I am sure we can reach a solution.</p>
-		<audio controls><source src="speech_sample/t2&wn/competence1.wav"></audio>
+	  <div class="col-sm-4 a">
+		<p><h4>1. I am sure we can reach a solution.</h4></p>
 	  </div>
-	  <div class="col-sm-3 b">
-		<p>1. Is there anything I can do to help?</p>
-		<audio controls><source src="speech_sample/t2&wn/warmth1.wav"></audio>
+	  <div class="col-sm-2 b">
+		<audio controls style="width:100%"><source src="speech_sample/t2&wn/competence1.wav"></audio>
 	  </div>
-	  <div class="col-sm-3 a">
-		<p>1. I am sure we can reach a solution.</p>
-		<audio controls><source src="speech_sample/t2&wg/C1.wav"></audio>
+	  <div class="col-sm-2 c">
+		<audio controls style="width:100%"><source src="speech_sample/t2&wg/C1.wav"></audio>
 	  </div>
-	  <div class="col-sm-3 b">
-		<p>1. Is there anything I can do to help?</p>
-		<audio controls><source src="speech_sample/t2&wg/W1.wav"></audio>
+	  <div class="col-sm-2 d">
+		<audio controls style="width:100%"><source src="speech_sample/gst/c1_gst.wav"></audio>
 	  </div>
-	</div>
-	
+	</div>	
+		
 	<div class="row">
-	  <div class="col-sm-3 a">
-		<p>2. I can remedy the situation.</p>
-		<audio controls><source src="speech_sample/t2&wn/competence2.wav"></audio>
+	  <div class="col-sm-4 a">
+		<p><h4>2. I can remedy the situation.</h4></p>
 	  </div>
-	  <div class="col-sm-3 b">
-		<p>2. Have you told your doctor how you are feeling?</p>
-		<audio controls><source src="speech_sample/t2&wn/warmth2.wav"></audio>
+	  <div class="col-sm-2 b">
+		<audio controls style="width:100%"><source src="speech_sample/t2&wn/competence2.wav"></audio>
 	  </div>
-	  <div class="col-sm-3 a">
-		<p>2. I can remedy the situation.</p>
-		<audio controls><source src="speech_sample/t2&wg/C2.wav"></audio>
+	  <div class="col-sm-2 c">
+		<audio controls style="width:100%"><source src="speech_sample/t2&wg/C2.wav"></audio>
 	  </div>
-	  <div class="col-sm-3 b">
-		<p>2. Have you told your doctor how you are feeling?</p>
-		<audio controls><source src="speech_sample/t2&wg/W2.wav"></audio>
+	  <div class="col-sm-2 d">
+		<audio controls style="width:100%"><source src="speech_sample/gst/c2_gst.wav"></audio>
 	  </div>
-	</div>
-	
+	</div>	
+		
 	<div class="row">
-	  <div class="col-sm-3 a">
-		<p>3. I understand that you feel upset.</p>
-		<audio controls><source src="speech_sample/t2&wn/competence3.wav"></audio>
+	  <div class="col-sm-4 a">
+		<p><h4>3. I understand that you feel upset.</h4></p>
 	  </div>
-	  <div class="col-sm-3 b">
-		<p>3. Do you need someone to talk with?</p>
-		<audio controls><source src="speech_sample/t2&wn/warmth3.wav"></audio>
+	  <div class="col-sm-2 b">
+		<audio controls style="width:100%"><source src="speech_sample/t2&wn/competence3.wav"></audio>
 	  </div>
-	  <div class="col-sm-3 a">
-		<p>3. I understand that you feel upset.</p>
-		<audio controls><source src="speech_sample/t2&wg/C3.wav"></audio>
+	  <div class="col-sm-2 c">
+		<audio controls style="width:100%"><source src="speech_sample/t2&wg/C3.wav"></audio>
 	  </div>
-	  <div class="col-sm-3 b">
-		<p>3. Do you need someone to talk with?</p>
-		<audio controls><source src="speech_sample/t2&wg/W3.wav"></audio>
+	  <div class="col-sm-2 d">
+		<audio controls style="width:100%"><source src="speech_sample/gst/c3_gst.wav"></audio>
 	  </div>
-	</div>
-	
+	</div>	
+		
 	<div class="row">
-	  <div class="col-sm-3 a">
-		<p>4. Feel free to call us anytime if you have any questions.</p>
-		<audio controls><source src="speech_sample/t2&wn/competence4.wav"></audio>
+	  <div class="col-sm-4 a">
+		<p><h4>4. Feel free to call us anytime if you have any questions.</h4></p>
 	  </div>
-	  <div class="col-sm-3 b">
-		<p>4. There is hope.</p>
-		<audio controls><source src="speech_sample/t2&wn/warmth4.wav"></audio>
+	  <div class="col-sm-2 b">
+		<audio controls style="width:100%"><source src="speech_sample/t2&wn/competence4.wav"></audio>
 	  </div>
-	  <div class="col-sm-3 a">
-		<p>4. Feel free to call us anytime if you have any questions.</p>
-		<audio controls><source src="speech_sample/t2&wg/C4.wav"></audio>
+	  <div class="col-sm-2 c">
+		<audio controls style="width:100%"><source src="speech_sample/t2&wg/C4.wav"></audio>
 	  </div>
-	  <div class="col-sm-3 b">
-		<p>4. There is hope.</p>
-		<audio controls><source src="speech_sample/t2&wg/W4.wav"></audio>
+	  <div class="col-sm-2 d">
+		<audio controls style="width:100%"><source src="speech_sample/gst/c4_gst.wav"></audio>
 	  </div>
-	</div>
-	
+	</div>		
+		
 	<div class="row">
-	  <div class="col-sm-3 a">
-		<p>5. If you need any further assistance, I would be happy to help.</p>
-		<audio controls><source src="speech_sample/t2&wn/competence5.wav"></audio>
+	  <div class="col-sm-4 a">
+		<p><h4>5. If you need any further assistance, I would be happy to help.</h4></p>
 	  </div>
-	  <div class="col-sm-3 b">
-		<p>5. It is ok to feel this way.</p>
-		<audio controls><source src="speech_sample/t2&wn/warmth5.wav"></audio>
+	  <div class="col-sm-2 b">
+		<audio controls style="width:100%"><source src="speech_sample/t2&wn/competence5.wav"></audio>
 	  </div>
-	  <div class="col-sm-3 a">
-		<p>5. If you need any further assistance, I would be happy to help.</p>
-		<audio controls><source src="speech_sample/t2&wg/C5.wav"></audio>
+	  <div class="col-sm-2 c">
+		<audio controls style="width:100%"><source src="speech_sample/t2&wg/C5.wav"></audio>
 	  </div>
-	  <div class="col-sm-3 b">
-		<p>5. It is ok to feel this way.</p>
-		<audio controls><source src="speech_sample/t2&wg/W5.wav"></audio>
+	  <div class="col-sm-2 d">
+		<audio controls style="width:100%"><source src="speech_sample/gst/c5_gst.wav"></audio>
 	  </div>
-	</div>
-	
+	</div>		
+		
 	<br>
-	
+    <br>
+		
 	<div class="row">
-	  <div class="col-sm-6 b">
-		<center><h3>GST</h3></center>
-	  </div>
-	  <div class="col-sm-6 a">
-		<center><h3>Deep Voice</h3></center>
+	  <div class="col-sm-12 a" style="background-color:#aaa;">
+		<center><h3>For Warmth</h3></center>
 	  </div>
 	</div>
 	
 	<div class="row">
-	  <div class="col-sm-3 a">
-		<center><h3>Competence</h3></center>
+	  <div class="col-sm-4 a">
+		<center><h3>Text</h3></center>
 	  </div>
-	  <div class="col-sm-3 b">
-		<center><h3>Warmth</h3></center>
+	  <div class="col-sm-2 b">
+		<center><h3>Tacotron2</h3></center>
 	  </div>
-	  <div class="col-sm-3 a">
-		<center><h3>Competence</h3></center>
+	  <div class="col-sm-2 c">
+		<center><h3>Waveglow</h3></center>
 	  </div>
-	  <div class="col-sm-3 b">
-		<center><h3>Warmth</h3></center>
-	  </div>
-	</div>
-	
-	<div class="row">
-	  <div class="col-sm-3 a">
-		<p>1. I am sure we can reach a solution.</p>
-		<audio controls><source src="speech_sample/gst/c1_gst.wav"></audio>
-	  </div>
-	  <div class="col-sm-3 b">
-		<p>1. Is there anything I can do to help?</p>
-		<audio controls><source src="speech_sample/gst/w1_gst.wav"></audio>
-	  </div>
-	  <div class="col-sm-3 a">
-		<p>1. I am sure we can reach a solution.</p>
-		<audio controls><source src="speech_sample/gst/c1.wav"></audio>
-	  </div>
-	  <div class="col-sm-3 b">
-		<p>1. Is there anything I can do to help?</p>
-		<audio controls><source src="speech_sample//w1.wav"></audio>
+	  <div class="col-sm-4 d">
+		<center><h3>Tacotron2 GST</h3></center>
 	  </div>
 	</div>
 	
 	<div class="row">
-	  <div class="col-sm-3 a">
-		<p>2. I can remedy the situation.</p>
-		<audio controls><source src="speech_sample/gst/c2_gst.wav"></audio>
+	  <div class="col-sm-4 a">
+		<p><h4>1. Is there anything I can do to help?</h4></p>
 	  </div>
-	  <div class="col-sm-3 b">
-		<p>2. Have you told your doctor how you are feeling?</p>
-		<audio controls><source src="speech_sample/gst/w2_gst.wav"></audio>
+	  <div class="col-sm-2 b">
+		<audio controls style="width:100%"><source src="speech_sample/t2&wn/warmth1.wav"></audio>
 	  </div>
-	  <div class="col-sm-3 a">
-		<p>2. I can remedy the situation.</p>
-		<audio controls><source src="speech_sample/gst/c2.wav"></audio>
+	  <div class="col-sm-2 c">
+		<audio controls style="width:100%"><source src="speech_sample/t2&wg/W1.wav"></audio>
 	  </div>
-	  <div class="col-sm-3 b">
-		<p>2. Have you told your doctor how you are feeling?</p>
-		<audio controls><source src="speech_sample//w2.wav"></audio>
+	  <div class="col-sm-2 d">
+		<audio controls style="width:100%"><source src="speech_sample/gst/w1_gst.wav"></audio>
+	  </div>
+	</div>	
+		
+	<div class="row">
+	  <div class="col-sm-4 a">
+		<p><h4>2. Have you told your doctor how you are feeling?</h4></p>
+	  </div>
+	  <div class="col-sm-2 b">
+		<audio controls style="width:100%"><source src="speech_sample/t2&wn/warmth2.wav"></audio>
+	  </div>
+	  <div class="col-sm-2 c">
+		<audio controls style="width:100%"><source src="speech_sample/t2&wg/W2.wav"></audio>
+	  </div>
+	  <div class="col-sm-2 d">
+		<audio controls style="width:100%"><source src="speech_sample/gst/w2_gst.wav"></audio>
+	  </div>
+	</div>		
+		
+	<div class="row">
+	  <div class="col-sm-4 a">
+		<p><h4>3. Do you need someone to talk with?</h4></p>
+	  </div>
+	  <div class="col-sm-2 b">
+		<audio controls style="width:100%"><source src="speech_sample/t2&wn/warmth3.wav"></audio>
+	  </div>
+	  <div class="col-sm-2 c">
+		<audio controls style="width:100%"><source src="speech_sample/t2&wg/W3.wav"></audio>
+	  </div>
+	  <div class="col-sm-2 d">
+		<audio controls style="width:100%"><source src="speech_sample/gst/w3_gst.wav"></audio>
+	  </div>
+	</div>		
+		
+	<div class="row">
+	  <div class="col-sm-4 a">
+		<p><h4>4. There is hope.</h4></p>
+	  </div>
+	  <div class="col-sm-2 b">
+		<audio controls style="width:100%"><source src="speech_sample/t2&wn/warmth4.wav"></audio>
+	  </div>
+	  <div class="col-sm-2 c">
+		<audio controls style="width:100%"><source src="speech_sample/t2&wg/W4.wav"></audio>
+	  </div>
+	  <div class="col-sm-2 d">
+		<audio controls style="width:100%"><source src="speech_sample/gst/w4_gst.wav"></audio>
+	  </div>
+	</div>
+
+	<div class="row">
+	  <div class="col-sm-4 a">
+		<p><h4>5. It is ok to feel this way.</h4></p>
+	  </div>
+	  <div class="col-sm-2 b">
+		<audio controls style="width:100%"><source src="speech_sample/t2&wn/warmth5.wav"></audio>
+	  </div>
+	  <div class="col-sm-2 c">
+		<audio controls style="width:100%"><source src="speech_sample/t2&wg/W5.wav"></audio>
+	  </div>
+	  <div class="col-sm-2 d">
+		<audio controls style="width:100%"><source src="speech_sample/gst/w5_gst.wav"></audio>
+	  </div>
+	</div>
+			
+    <br>
+    <br>    
+  
+	<div class="row">
+	  <div class="col-sm-12 a" style="background-color:#aaa;">
+		<center><h3>Conversation</h3></center>
 	  </div>
 	</div>
 	
 	<div class="row">
-	  <div class="col-sm-3 a">
-		<p>3. I understand that you feel upset.</p>
-		<audio controls><source src="speech_sample/gst/c3_gst.wav"></audio>
+	  <div class="col-sm-4 a">
+		<center><h3>Text</h3></center>
 	  </div>
-	  <div class="col-sm-3 b">
-		<p>3. Do you need someone to talk with?</p>
-		<audio controls><source src="speech_sample/gst/w3_gst.wav"></audio>
+	  <div class="col-sm-2 b">
+		<center><h3>Tacotron2</h3></center>
 	  </div>
-	  <div class="col-sm-3 a">
-		<p>3. I understand that you feel upset.</p>
-		<audio controls><source src="speech_sample/gst/c3.wav"></audio>
+	  <div class="col-sm-2 c">
+		<center><h3>Waveglow</h3></center>
 	  </div>
-	  <div class="col-sm-3 b">
-		<p>3. Do you need someone to talk with?</p>
-		<audio controls><source src="speech_sample//w3.wav"></audio>
+	  <div class="col-sm-4 d">
+		<center><h3>Tacotron2 GST</h3></center>
 	  </div>
 	</div>
 	
 	<div class="row">
-	  <div class="col-sm-3 a">
-		<p>4. Feel free to call us anytime if you have any questions.</p>
-		<audio controls><source src="speech_sample/gst/c4_gst.wav"></audio>
+	  <div class="col-sm-4 a">
+		<p><h4>1. Hi! My name is Abhinav. I am calling to order a pizza.<h4></p>
 	  </div>
-	  <div class="col-sm-3 b">
-		<p>4. There is hope.</p>
-		<audio controls><source src="speech_sample/gst/w4_gst.wav"></audio>
+	  <div class="col-sm-2 b">
+		<audio controls style="width:100%"><source src="speech_sample/t2&wn/t2_1.wav"></audio>
 	  </div>
-	  <div class="col-sm-3 a">
-		<p>4. Feel free to call us anytime if you have any questions.</p>
-		<audio controls><source src="speech_sample/gst/c4.wav"></audio>
+	  <div class="col-sm-2 c">
+		<audio controls style="width:100%"><source src="speech_sample/t2&wg/s1.wav"></audio>
 	  </div>
-	  <div class="col-sm-3 b">
-		<p>4. There is hope.</p>
-		<audio controls><source src="speech_sample//w4.wav"></audio>
+	  <div class="col-sm-2 d">
+		<audio controls style="width:100%"><source src="speech_sample/gst/g1/g1_1.wav"></audio>
 	  </div>
-	</div>
+	  <div class="col-sm-2 d">
+		<audio controls style="width:100%"><source src="speech_sample/gst/g2/g2_1.wav"></audio>
+	  </div>
+	</div>	
+		
+	<div class="row">
+	  <div class="col-sm-4 a">
+		<p><h4>2. Hello Mr. Abhinav. Sure, May I know your preferences?<h4></p>
+	  </div>
+	  <div class="col-sm-2 b">
+		<audio controls style="width:100%"><source src="speech_sample/t2&wn/t2_2.wav"></audio>
+	  </div>
+	  <div class="col-sm-2 c">
+		<audio controls style="width:100%"><source src="speech_sample/t2&wg/s2.wav"></audio>
+	  </div>
+	  <div class="col-sm-2 d">
+		<audio controls style="width:100%"><source src="speech_sample/gst/g1/g1_2.wav"></audio>
+	  </div>
+	  <div class="col-sm-2 d">
+		<audio controls style="width:100%"><source src="speech_sample/gst/g2/g2_2.wav"></audio>
+	  </div>
+	</div>	
+		
+	<div class="row">
+	  <div class="col-sm-4 a">
+		<p><h4>3. Yup. I would like to have a Coffee. Chocolate flavour of medium size for ten people.<h4></p>
+	  </div>
+	  <div class="col-sm-2 b">
+		<audio controls style="width:100%"><source src="speech_sample/t2&wn/t2_3.wav"></audio>
+	  </div>
+	  <div class="col-sm-2 c">
+		<audio controls style="width:100%"><source src="speech_sample/t2&wg/s3.wav"></audio>
+	  </div>
+	  <div class="col-sm-2 d">
+		<audio controls style="width:100%"><source src="speech_sample/gst/g1/g1_3.wav"></audio>
+	  </div>
+	  <div class="col-sm-2 d">
+		<audio controls style="width:100%"><source src="speech_sample/gst/g2/g2_3.wav"></audio>
+	  </div>
+	</div>	
+
+	<div class="row">
+	  <div class="col-sm-4 a">
+		<p><h4>4. Ok! Any allergy information you would like to tell us for your order?<h4></p>
+	  </div>
+	  <div class="col-sm-2 b">
+		<audio controls style="width:100%"><source src="speech_sample/t2&wn/t2_4.wav"></audio>
+	  </div>
+	  <div class="col-sm-2 c">
+		<audio controls style="width:100%"><source src="speech_sample/t2&wg/s4.wav"></audio>
+	  </div>
+	  <div class="col-sm-2 d">
+		<audio controls style="width:100%"><source src="speech_sample/gst/g1/g1_4.wav"></audio>
+	  </div>
+	  <div class="col-sm-2 d">
+		<audio controls style="width:100%"><source src="speech_sample/gst/g2/g2_4.wav"></audio>
+	  </div>
+	</div>	
+		
+	<div class="row">
+	  <div class="col-sm-4 a">
+		<p><h4>5. No, I do not have any allergy.<h4></p>
+	  </div>
+	  <div class="col-sm-2 b">
+		<audio controls style="width:100%"><source src="speech_sample/t2&wn/t2_5.wav"></audio>
+	  </div>
+	  <div class="col-sm-2 c">
+		<audio controls style="width:100%"><source src="speech_sample/t2&wg/s5.wav"></audio>
+	  </div>
+	  <div class="col-sm-2 d">
+		<audio controls style="width:100%"><source src="speech_sample/gst/g1/g1_5.wav"></audio>
+	  </div>
+	  <div class="col-sm-2 d">
+		<audio controls style="width:100%"><source src="speech_sample/gst/g2/g2_5.wav"></audio>
+	  </div>
+	</div>		
+		
+	<div class="row">
+	  <div class="col-sm-4 a">
+		<p><h4>6. Fine. Where do you want us to send this order?<h4></p>
+	  </div>
+	  <div class="col-sm-2 b">
+		<audio controls style="width:100%"><source src="speech_sample/t2&wn/t2_6.wav"></audio>
+	  </div>
+	  <div class="col-sm-2 c">
+		<audio controls style="width:100%"><source src="speech_sample/t2&wg/s6.wav"></audio>
+	  </div>
+	  <div class="col-sm-2 d">
+		<audio controls style="width:100%"><source src="speech_sample/gst/g1/g1_6.wav"></audio>
+	  </div>
+	  <div class="col-sm-2 d">
+		<audio controls style="width:100%"><source src="speech_sample/gst/g2/g2_6.wav"></audio>
+	  </div>
+	</div>	
+
+	<div class="row">
+	  <div class="col-sm-4 a">
+		<p><h4>7. My address is Copistrasse 24, Berlin, 10715. And, when can I expect the order to reach my place?<h4></p>
+	  </div>
+	  <div class="col-sm-2 b">
+		<audio controls style="width:100%"><source src="speech_sample/t2&wn/t2_7.wav"></audio>
+	  </div>
+	  <div class="col-sm-2 c">
+		<audio controls style="width:100%"><source src="speech_sample/t2&wg/s7.wav"></audio>
+	  </div>
+	  <div class="col-sm-2 d">
+		<audio controls style="width:100%"><source src="speech_sample/gst/g1/g1_7.wav"></audio>
+	  </div>
+	  <div class="col-sm-2 d">
+		<audio controls style="width:100%"><source src="speech_sample/gst/g2/g2_7.wav"></audio>
+	  </div>
+	</div>	
 	
 	<div class="row">
-	  <div class="col-sm-3 a">
-		<p>5. If you need any further assistance, I would be happy to help.</p>
-		<audio controls><source src="speech_sample/gst/c5_gst.wav"></audio>
+	  <div class="col-sm-4 a">
+		<p><h4>8. you will receive your order in 30 minutes.<h4></p>
 	  </div>
-	  <div class="col-sm-3 b">
-		<p>5. It is ok to feel this way.</p>
-		<audio controls><source src="speech_sample/gst/w5_gst.wav"></audio>
+	  <div class="col-sm-2 b">
+		<audio controls style="width:100%"><source src="speech_sample/t2&wn/t2_8.wav"></audio>
 	  </div>
-	  <div class="col-sm-3 a">
-		<p>5. If you need any further assistance, I would be happy to help.</p>
-		<audio controls><source src="speech_sample/gst/c5.wav"></audio>
+	  <div class="col-sm-2 c">
+		<audio controls style="width:100%"><source src="speech_sample/t2&wg/s8.wav"></audio>
 	  </div>
-	  <div class="col-sm-3 b">
-		<p>5. It is ok to feel this way.</p>
-		<audio controls><source src="speech_sample//w5.wav"></audio>
+	  <div class="col-sm-2 d">
+		<audio controls style="width:100%"><source src="speech_sample/gst/g1/g1_8.wav"></audio>
 	  </div>
-	</div>
+	  <div class="col-sm-2 d">
+		<audio controls style="width:100%"><source src="speech_sample/gst/g2/g2_8.wav"></audio>
+	  </div>
+	</div>	
 	
+	<div class="row">
+	  <div class="col-sm-4 a">
+		<p><h4>9. Awesome! Thanks.<h4></p>
+	  </div>
+	  <div class="col-sm-2 b">
+		<audio controls style="width:100%"><source src="speech_sample/t2&wn/t2_9.wav"></audio>
+	  </div>
+	  <div class="col-sm-2 c">
+		<audio controls style="width:100%"><source src="speech_sample/t2&wg/s9.wav"></audio>
+	  </div>
+	  <div class="col-sm-2 d">
+		<audio controls style="width:100%"><source src="speech_sample/gst/g1/g1_9.wav"></audio>
+	  </div>
+	  <div class="col-sm-2 d">
+		<audio controls style="width:100%"><source src="speech_sample/gst/g2/g2_9.wav"></audio>
+	  </div>
+	</div>	
 	
-	
-	
-	
+	<div class="row">
+	  <div class="col-sm-4 a">
+		<p><h4>10. Thank you. Have a nice day. Bye.<h4></p>
+	  </div>
+	  <div class="col-sm-2 b">
+		<audio controls style="width:100%"><source src="speech_sample/t2&wn/t2_10.wav"></audio>
+	  </div>
+	  <div class="col-sm-2 c">
+		<audio controls style="width:100%"><source src="speech_sample/t2&wg/s10.wav"></audio>
+	  </div>
+	  <div class="col-sm-2 d">
+		<audio controls style="width:100%"><source src="speech_sample/gst/g1/g1_10.wav"></audio>
+	  </div>
+	  <div class="col-sm-2 d">
+		<audio controls style="width:100%"><source src="speech_sample/gst/g2/g2_10.wav"></audio>
+	  </div>
+	</div>	
+			
+		
 	
 	
   </body>
